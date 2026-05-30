@@ -1,0 +1,82 @@
+# encoding: utf-8
+# 2026 R1
+SetScriptVersion(Version="26.1.174")
+system1 = GetSystem(Name="FFF")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath="C:/Users/ncgru/Documents/Projects/PC-Case/CAD-Mock4 (Simplified)/PC-Case4-fluidmodel.iges")
+geometry1.Edit(IsSpaceClaimGeometry=True)
+meshComponent1 = system1.GetComponent(Name="Mesh")
+meshComponent1.Refresh()
+mesh1 = system1.GetContainer(ComponentName="Mesh")
+mesh1.Edit()
+mesh1.Exit()
+meshComponent1.Update(AllDependencies=True)
+setupComponent1 = system1.GetComponent(Name="Setup")
+setupComponent1.Refresh()
+setup1 = system1.GetContainer(ComponentName="Setup")
+fluentLauncherSettings1 = setup1.GetFluentLauncherSettings()
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(EnvPath={}))
+setup1.Edit()
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command="""/file/set-tui-version \"26.1\"
+Graphics driver currently in use: dx11
+(cx-use-window-id 51)(cx-set-camera-relative '(0.00208974 -0.530428 0.436941) '(0 0 0) '(0.315552 0.226699 0.193414) 0 0)(cx-use-window-id 51)(handle-key \"control ??\")(cx-use-window-id 51)(dolly-camera 0.0375948 0.0801283 0)(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Boundary Conditions|Inlet|inlet (velocity-inlet, id=9)\"))""")
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|inlet (velocity-inlet, id=9)"))(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|inlet (velocity-inlet, id=9)"))(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 1)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 2)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 3)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 4)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 5)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 6)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 7)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 8)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-item "Velocity Inlet*PanelButtons*PushButton2(Cancel)")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Wall|wall-fluid (wall, id=8)"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Wall|wall-fluid (wall, id=8)"))(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Boundary Conditions|Wall|wall-fluid (wall, id=8)\"))(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 1)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 2)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 3)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 4)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 5)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 6)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 7)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 8)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 9)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 10)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 1)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 2)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 3)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 4)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 5)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 6)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 1)(cx-gui-do cx-enable-apply-button \"Wall\")(cx-gui-do cx-set-expression-entry \"Wall*Frame4*Frame2(Thermal)*Frame1*Frame1(Thermal Conditions)*Table3*Table1*Table2*ExpressionEntry1(Heat Flux)\" '(\"10\" . 0))(cx-gui-do cx-activate-item \"Wall*PanelButtons*PushButton1(OK)\")")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Wall*PanelButtons*PushButton2(Cancel)")')
+setup1.SendCommand(Command="(cx-use-window-id 51)(cx-set-camera-relative '(0.181805 -0.2651 -0.0412527) '(0 0 0) '(0.0871753 0.0505867 0.159877) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.765522 -0.334171 -1.4082) '(0 0 0) '(0.0891404 0.0132558 0.0785446) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(-0.948089 0.0340943 1.45138) '(0 0 0) '(-0.0742131 -0.00106353 0.0757946) 0 0)(cx-use-window-id 51)(handle-key \"control ??\")(cx-use-window-id 51)(dolly-camera 0.070896 -0.010602 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.0207238 0.576764 -0.143279) '(0 0 0) '(-0.0854787 -0.0603625 -0.316415) 0 0)(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Dynamic Mesh\"))")
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Dynamic Mesh"))(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Dynamic Mesh"))(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Initialization"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Initialization"))(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Solution|Initialization\"))(cx-gui-do cx-set-list-selections \"Solution Initialization*Table1*DropDownList1(Compute from)\" '( 0))")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Solution Initialization*Table1*DropDownList1(Compute from)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Solution Initialization*Table1*Frame9*PushButton1(Initialize)")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Run Calculation*Table1*Table6(Solution Advancement)*Table1*PushButton4(Calculate)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Information*OK")')
+Save(Overwrite=True)
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*FileMenu*Save Project")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Information*OK")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*FileMenu*Close Fluent")')
+results1 = system1.GetContainer(ComponentName="Results")
+results1.Edit()
+results1.SendCommand(Command="""VIEW:View 1
+  Camera Mode = User Specified
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pivot Point = 0.227013, 0.159544, -0.085725
+    Scale = 3.99182
+    Pan = 0, 0
+    Rotation Quaternion = 0.0616088, -0.893491, -0.0469464, 0.442404
+    
+  END
+
+END
+
+> update
+# Sending visibility action from ViewUtilities
+>show /DATA READER/CASE:Case FFF/BOUNDARY:outlet.1, view=/VIEW:View 1""")
+results1.SendCommand(Command="""VIEW:View 1
+  Camera Mode = User Specified
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pivot Point = 0.227013, 0.159544, -0.085725
+    Scale = 5.48657
+    Pan = 0, 0
+    Rotation Quaternion = 0.112586, 0.884106, 0.0298778, 0.452597
+    
+  END
+
+END
+
+> update
+# Sending visibility action from ViewUtilities
+>hide /DATA READER/CASE:Case FFF/BOUNDARY:outlet.1, view=/VIEW:View 1""")
+results1.Exit()
+Save(Overwrite=True)
+Open(FilePath="C:/Users/ncgru/Documents/Projects/FLUENT_demo/StraightPipe.wbpj")

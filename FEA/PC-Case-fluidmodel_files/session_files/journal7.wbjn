@@ -1,0 +1,221 @@
+# encoding: utf-8
+# 2026 R1
+SetScriptVersion(Version="26.1.174")
+system1 = GetSystem(Name="FFF")
+setup1 = system1.GetContainer(ComponentName="Setup")
+fluentLauncherSettings1 = setup1.GetFluentLauncherSettings()
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(EnvPath={}))
+setup1.Edit()
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command="""/file/set-tui-version \"26.1\"
+Graphics driver currently in use: dx11
+(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Boundary Conditions|Internal|interior-fff-solid111111 (interior, id=2)\"))""")
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Internal|interior-fff-solid111111 (interior, id=2)"))(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Internal|interior-fff-solid111111 (interior, id=2)"))(cx-gui-do cx-activate-item "Interior*PanelButtons*PushButton2(Cancel)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "General*Table1*ButtonBox1(Mesh)*PushButton2(Display)")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '( 5 9))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '( 5))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-activate-item \"Mesh Display*PanelButtons*PushButton1(OK)\")")
+setup1.SendCommand(Command="(cx-use-window-id 51)(cx-set-camera-relative '(0.0220478 -0.0478301 0.0182491) '(0 0 0) '(0.315314 0.250577 0.27924) 0 0)(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '())(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-activate-item \"Mesh Display*PanelButtons*PushButton2(Cancel)\")")
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Internal|interior-fff-solid111111 (interior, id=2)"))(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Internal|interior-fff-solid111111 (interior, id=2)"))(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "General*Table1*ButtonBox1(Mesh)*PushButton2(Display)")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '())(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '( 5))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '())(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*Table2(Display State)*PushButton3(New Surface)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton2(Cancel)")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Internal|interior-fff-solid111111 (interior, id=2)"))(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Internal|interior-fff-solid111111 (interior, id=2)"))(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*PopupMenuTree-interior-fff-solid111111 (interior, id=2)*Edit...")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Interior*PanelButtons*PushButton2(Cancel)")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Internal|interior-fff-solid111111 (interior, id=2)"))(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Internal|interior-fff-solid111111 (interior, id=2)"))(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Internal|interior-fff-solid111111 (interior, id=2)"))(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Internal"))(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Internal"))(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Internal"))(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )(cx-use-window-id 51)')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "General*Table1*ButtonBox1(Mesh)*PushButton2(Display)")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '( 5 8))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-activate-item \"Mesh Display*PanelButtons*PushButton1(OK)\")")
+setup1.SendCommand(Command="(cx-use-window-id 51)(cx-set-camera-relative '(-0.0521591 0.035008 0.0205905) '(0 0 0) '(0.0962965 -0.0938764 -0.275258) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.00146039 0.00206339 -0.00212252) '(0 0 0) '(-0.0507664 -0.0131766 -0.0110096) 0 0)(cx-use-window-id 51)(cx-gui-do cx-activate-item \"Mesh Display*PanelButtons*PushButton2(Cancel)\")")
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list ))(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Cell Zone Conditions|Solid|fff-solid111111 (solid, id=4)"))(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Cell Zone Conditions|Solid|fff-solid111111 (solid, id=4)"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Cell Zone Conditions|Solid|fff-solid111111 (solid, id=4)"))(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Cell Zone Conditions|Solid|fff-solid111111 (solid, id=4)"))(cx-gui-do cx-activate-tab-index "Solid*Frame2*Table3*Frame1" 0)(cx-gui-do cx-activate-tab-index "Solid*Frame2*Table3*Frame1" 1)(cx-gui-do cx-activate-tab-index "Solid*Frame2*Table3*Frame1" 0)(cx-gui-do cx-activate-tab-index "Solid*Frame2*Table3*Frame1" 2)(cx-gui-do cx-activate-tab-index "Solid*Frame2*Table3*Frame1" 0)(cx-gui-do cx-activate-tab-index "Solid*Frame2*Table3*Frame1" 3)(cx-gui-do cx-activate-tab-index "Solid*Frame2*Table3*Frame1" 0)(cx-gui-do cx-activate-tab-index "Solid*Frame2*Table3*Frame1" 4)(cx-gui-do cx-activate-tab-index "Solid*Frame2*Table3*Frame1" 0)(cx-gui-do cx-activate-tab-index "Solid*Frame2*Table3*Frame1" 5)(cx-gui-do cx-activate-tab-index "Solid*Frame2*Table3*Frame1" 0)(cx-gui-do cx-activate-item "Solid*PanelButtons*PushButton2(Cancel)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "General*Table1*ButtonBox1(Mesh)*PushButton2(Display)")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '( 5))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '( 1 5))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '( 1))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-activate-item \"Mesh Display*PanelButtons*PushButton1(OK)\")")
+setup1.SendCommand(Command="(cx-use-window-id 51)(cx-set-camera-relative '(-0.0137823 0.022912 -0.0146448) '(0 0 0) '(-0.207716 -0.196787 -0.165422) 0 0)(cx-gui-do cx-activate-item \"Mesh Display*PanelButtons*PushButton2(Cancel)\")")
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Cell Zone Conditions|Fluid|fluid (fluid, id=7)"))')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*FileMenu*Close Fluent")')
+mesh1 = system1.GetContainer(ComponentName="Mesh")
+mesh1.Edit()
+Save(Overwrite=True)
+mesh1.Exit()
+meshComponent1 = system1.GetComponent(Name="Mesh")
+meshComponent1.Update(AllDependencies=True)
+setupComponent1 = system1.GetComponent(Name="Setup")
+setupComponent1.Refresh()
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(EnvPath={}))
+setup1.Edit()
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command="""/file/set-tui-version \"26.1\"
+Graphics driver currently in use: dx11
+(cx-gui-do cx-activate-item \"Information*OK\")(cx-use-window-id 51)(cx-set-camera-relative '(0.223145 -0.335454 -0.543991) '(0 0 0) '(0.311266 0.269585 0.397738) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(-0.117917 -0.103565 -0.164041) '(0 0 0) '(0.098943 0.00665653 -0.0557556) 0 0)(cx-use-window-id 51)(handle-key \"control ??\")(cx-use-window-id 51)(dolly-camera -0.0543588 0.0678408 0)(cx-use-window-id 51)(cx-set-camera-relative '(-0.785835 0.0965916 0.00306278) '(0 0 0) '(0.106948 0.00689507 0.296345) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(-0.23524 0.166833 1.29927) '(0 0 0) '(0.259992 -0.0294138 -0.141792) 0 0)(cx-use-window-id 51)(handle-key \"control ??\")(cx-use-window-id 51)(dolly-camera -0.0159873 0.0754146 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.077077 0.0696035 0.0973126) '(0 0 0) '(0.0568977 -0.0240296 -0.10064) 0 0)(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Cell Zone Conditions|Solid|fff-solid111111 (solid, id=4)\"))(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Boundary Conditions|Internal|interior-fff-solid111111 (interior, id=2)\"))(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Boundary Conditions|Inlet|inlet (velocity-inlet, id=9)\"))""")
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|inlet (velocity-inlet, id=9)"))(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|inlet (velocity-inlet, id=9)"))(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 1)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 2)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 3)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 4)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 5)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 6)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 7)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 8)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-item "Velocity Inlet*PanelButtons*PushButton2(Cancel)")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Outlet|outlet (pressure-outlet, id=11)"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Outlet|outlet (pressure-outlet, id=11)"))(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Outlet|outlet (pressure-outlet, id=11)"))(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 1)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 2)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 3)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 4)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 5)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 6)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 7)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 8)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 1)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-item "Pressure Outlet*PanelButtons*PushButton2(Cancel)")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Wall|wall (wall, id=20)"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Wall|wall (wall, id=20)"))(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Wall|wall (wall, id=20)"))(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 1)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 2)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 3)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 4)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 5)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 6)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 7)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 8)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 9)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 10)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 1)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 2)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 3)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 4)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 5)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 6)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)(cx-gui-do cx-activate-item "Wall*PanelButtons*PushButton2(Cancel)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "General*Table1*ButtonBox1(Mesh)*PushButton2(Display)")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '( 8 11))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '( 8))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-activate-item \"Mesh Display*PanelButtons*PushButton1(OK)\")")
+setup1.SendCommand(Command="(cx-use-window-id 51)(cx-set-camera-relative '(-0.169892 -0.441315 -1.28807) '(0 0 0) '(-0.337008 0.0609378 0.171434) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.0163283 0.270087 1.10168) '(0 0 0) '(0.239591 -0.026143 -0.0609974) 0 0)(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '( 8 12))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '( 12))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-activate-item \"Mesh Display*PanelButtons*PushButton1(OK)\")")
+setup1.SendCommand(Command="(cx-use-window-id 51)(dolly-camera -7.39694e-05 -0.0130385 0)(cx-use-window-id 51)(cx-set-camera-relative '(-0.00621431 0.0016287 -0.0176771) '(0 0 0) '(0 0 0) 0 0)(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '( 8 12))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-activate-item \"Mesh Display*PanelButtons*PushButton1(OK)\")")
+setup1.SendCommand(Command="(cx-use-window-id 51)(cx-set-camera-relative '(1.06687 0.00903606 1.04808) '(0 0 0) '(0.2475 -0.0988157 -0.0688705) 0 0)(cx-use-window-id 51)(handle-key \"control ??\")(cx-use-window-id 51)(dolly-camera -0.0316236 0.0157906 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.222782 0.0101908 -0.055154) '(0 0 0) '(-0.128538 -0.174373 -0.558609) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.280137 -0.00604308 -1.47534) '(0 0 0) '(-0.834888 -0.149438 -0.0636538) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(-0.340435 -0.708318 -0.458769) '(0 0 0) '(0.0563167 0.134574 0.0899036) 0 0)(cx-use-window-id 51)(handle-key \"control ??\")(cx-use-window-id 51)(dolly-camera -0.0592682 -0.0607204 0)(cx-use-window-id 51)(cx-set-camera-relative '(-0.187013 -0.0147955 -0.105929) '(0 0 0) '(-0.10877 0.0470821 0.166555) 0 0)(cx-use-window-id 51)(handle-key \"control ??\")(cx-use-window-id 51)(dolly-camera 0.0650019 0.0624345 0)(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '( 8 9 12))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '( 8 12))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '( 12))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '())(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '( 9))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-activate-item \"Mesh Display*PanelButtons*PushButton1(OK)\")")
+setup1.SendCommand(Command="(cx-use-window-id 51)(dolly-camera -0.0375569 -0.0397223 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.173548 0.161314 0.0983865) '(0 0 0) '(0.0254241 0.00172102 -0.0270173) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.0132874 0.0376168 0.0563004) '(0 0 0) '(0.0395314 0.0381021 0.0211188) 0 0)(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '())(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '( 10))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '( 9 10))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\" '( 9))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*Frame1*List1(Surfaces)\")(cx-gui-do cx-activate-item \"Mesh Display*PanelButtons*PushButton2(Cancel)\")")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*FileMenu*Close Fluent")')
+mesh1.Edit()
+mesh1.Exit()
+meshComponent1.Update(AllDependencies=True)
+setupComponent1.Refresh()
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(EnvPath={}))
+setup1.Edit()
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command="""/file/set-tui-version \"26.1\"
+Graphics driver currently in use: dx11
+(cx-gui-do cx-activate-item \"Information*OK\")(cx-use-window-id 51)(cx-set-camera-relative '(0.705797 -0.638374 -1.15905) '(0 0 0) '(0.173752 0.23809 0.51302) 0 0)(cx-use-window-id 51)(handle-key \"control ??\")(cx-use-window-id 51)(dolly-camera -0.0688819 -0.199819 0)(cx-use-window-id 51)(cx-set-camera-relative '(-0.107247 -0.572523 -0.513214) '(0 0 0) '(0.305883 0.0514271 -0.0925922) 0 0)(cx-use-window-id 51)(handle-key \"control ??\")(cx-use-window-id 51)(dolly-camera -0.0590993 -0.00108451 0)(cx-use-window-id 51)(cx-set-camera-relative '(-0.143096 0.0208339 -0.14931) '(0 0 0) '(-0.0646348 -0.000626445 0.0518124) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.367378 -0.0640289 0.64628) '(0 0 0) '(0.13496 -0.00613201 -0.105198) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(-0.283331 0.115419 0.646848) '(0 0 0) '(0.0200899 -0.00731111 -0.0393442) 0 0)(cx-use-window-id 51)(handle-key \"control ??\")(cx-use-window-id 51)(dolly-camera 0.0412337 0.0569137 0)(cx-use-window-id 51)(handle-key \"control ??\")(cx-use-window-id 51)(dolly-camera 0.077745 -0.0381036 0)(cx-use-window-id 51)(cx-set-camera-relative '(-0.507262 0.424877 0.212267) '(0 0 0) '(-0.124069 -0.0371255 -0.149032) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.359795 -0.606614 -0.0902399) '(0 0 0) '(0.03982 0.0541664 0.346204) 0 0)(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Cell Zone Conditions|Fluid\"))(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Boundary Conditions|Inlet\"))""")
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet"))(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet"))(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Outlet|outlet (pressure-outlet, id=11)"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Outlet|outlet (pressure-outlet, id=11)"))(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Outlet|outlet (pressure-outlet, id=11)"))(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 1)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 2)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 3)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 4)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 5)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 6)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 7)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 8)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-item "Pressure Outlet*PanelButtons*PushButton2(Cancel)")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Outlet|outlet.1 (pressure-outlet, id=12)"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Outlet|outlet.1 (pressure-outlet, id=12)"))(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Outlet|outlet.1 (pressure-outlet, id=12)"))(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 1)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 2)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 3)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 4)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 5)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 6)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 7)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 8)(cx-gui-do cx-activate-tab-index "Pressure Outlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-item "Pressure Outlet*PanelButtons*PushButton2(Cancel)")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Wall"))(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Wall|wall (wall, id=20)"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Wall|wall (wall, id=20)"))(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Wall|wall (wall, id=20)"))(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 1)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 2)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 3)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 4)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 5)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 6)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 7)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 8)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 9)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 10)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 1)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 2)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 3)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 4)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 5)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 6)(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)(cx-gui-do cx-activate-tab-index "Wall*Frame4" 1)(cx-gui-do cx-activate-item "Wall*PanelButtons*PushButton2(Cancel)")')
+setup1.SendCommand(Command="(cx-use-window-id 51)(cx-set-camera-relative '(0.565835 0.0308879 -0.883422) '(0 0 0) '(0.00982272 -0.000219822 -0.0601338) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(-0.00373358 -0.0195149 0.0146048) '(0 0 0) '(0.0894333 -0.00319326 0.0152092) 0 0)(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Solution|Initialization\"))")
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Initialization"))(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Solution|Initialization\"))(cx-gui-do cx-set-list-selections \"Solution Initialization*Table1*DropDownList1(Compute from)\" '( 0))")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Solution Initialization*Table1*DropDownList1(Compute from)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Solution Initialization*Table1*Frame9*PushButton1(Initialize)")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Run Calculation*Table1*Table6(Solution Advancement)*Table1*PushButton4(Calculate)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Information*OK")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*FileMenu*Close Fluent")')
+results1 = system1.GetContainer(ComponentName="Results")
+results1.Edit()
+results1.SendCommand(Command="""VIEW:View 1
+  Camera Mode = User Specified
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pivot Point = 0.227013, 0.159544, -0.085725
+    Scale = 4.38115
+    Pan = -0.0198552, 0.00138877
+    Rotation Quaternion = -0.0804165, -0.452197, -0.0664538, -0.885894
+    
+  END
+
+END
+
+> update
+# Sending visibility action from ViewUtilities
+>hide /CONTOUR:TempVol, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /CONTOUR:TempVol, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>hide /CONTOUR:TempVol, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /STREAMLINE:Streamline 1, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /STREAMLINE:Streamline 2, view=/VIEW:View 1""")
+results1.SendCommand(Command="""VIEW:View 1
+  Camera Mode = User Specified
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pivot Point = 0.227013, 0.159544, -0.085725
+    Scale = 4.38115
+    Pan = -0.0198552, 0.00138877
+    Rotation Quaternion = -0.113044, -0.379844, -0.0596328, -0.916275
+    
+  END
+
+END
+
+> update
+# Sending visibility action from ViewUtilities
+>show /CONTOUR:TempVol, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /DATA READER/CASE:Case FFF/BOUNDARY:inlet, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /DATA READER/CASE:Case FFF/BOUNDARY:inlet.1, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /DATA READER/CASE:Case FFF/BOUNDARY:outlet, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /DATA READER/CASE:Case FFF/BOUNDARY:outlet.1, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /DATA READER/CASE:Case FFF/BOUNDARY:wall, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /DATA READER/CASE:Case FFF/BOUNDARY:wall fluid, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /DATA READER/CASE:Case FFF/BOUNDARY:wall.1, view=/VIEW:View 1""")
+results1.SendCommand(Command="> autolegend plot=/CONTOUR:TempVol, view=VIEW:View 1")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>hide /DATA READER/CASE:Case FFF/BOUNDARY:wall fluid, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>hide /DATA READER/CASE:Case FFF/BOUNDARY:wall, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>hide /DATA READER/CASE:Case FFF/BOUNDARY:outlet, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>hide /DATA READER/CASE:Case FFF/BOUNDARY:inlet.1, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>hide /DATA READER/CASE:Case FFF/BOUNDARY:inlet, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>hide /DATA READER/CASE:Case FFF/BOUNDARY:outlet.1, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>hide /DATA READER/CASE:Case FFF/BOUNDARY:wall.1, view=/VIEW:View 1""")
+results1.SendCommand(Command="> autolegend plot=/CONTOUR:TempVol, view=VIEW:View 1")
+results1.SendCommand(Command="""CONTOUR:TempVol
+Apply Instancing Transform = On
+Clip Contour = Off
+Colour Map = Default Colour Map
+Colour Scale = Linear
+Colour Variable = Temperature
+Colour Variable Boundary Values = Conservative
+Constant Contour Colour = Off
+Contour Range = Global
+Culling Mode = No Culling
+Domain List = /DOMAIN GROUP:All FFF Domains
+Draw Contours = On
+Font = Sans Serif
+Fringe Fill = On
+Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+Lighting = On
+Line Colour = 0, 0, 0
+Line Colour Mode = Default
+Line Width = 1
+Location List = wall
+Max = 350 [K]
+Min = 300 [K]
+Number of Contours = 11
+Show Numbers = Off
+Specular Lighting = On
+Surface Drawing = Smooth Shading
+Text Colour = 0, 0, 0
+Text Colour Mode = Default
+Text Height = 0.024
+Transparency = 0.48
+Use Face Values = Off
+Value List = 0 [K],1 [K]
+  OBJECT VIEW TRANSFORM:
+  Apply Reflection = Off
+  Apply Rotation = Off
+  Apply Scale = Off
+  Apply Translation = Off
+  Principal Axis = Z
+  Reflection Plane Option = XY Plane
+  Rotation Angle = 0.0 [degree]
+  Rotation Axis From = 0 [m], 0 [m], 0 [m]
+  Rotation Axis To = 0 [m], 0 [m], 0 [m]
+  Rotation Axis Type = Principal Axis
+  Scale Vector = 1 , 1 , 1 
+  Translation Vector = 0 [m], 0 [m], 0 [m]
+  X = 0.0 [m]
+  Y = 0.0 [m]
+  Z = 0.0 [m]
+  END
+END""")
+results1.Exit()
+Save(Overwrite=True)

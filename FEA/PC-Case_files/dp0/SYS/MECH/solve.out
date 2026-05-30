@@ -1,0 +1,1431 @@
+
+ Ansys Mechanical Enterprise Academic Student      
+
+
+ *------------------------------------------------------------------*
+ |                                                                  |
+ |   W E L C O M E   T O   T H E   A N S Y S (R)  P R O G R A M     |
+ |                                                                  |
+ *------------------------------------------------------------------*
+
+
+
+
+ ***************************************************************
+ *         ANSYS MAPDL 2026 R1          LEGAL NOTICES          *
+ ***************************************************************
+ *                                                             *
+ * Copyright (c) 2026 Synopsys, Inc. and ANSYS, Inc.           *
+ * All rights reserved.                                        *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of Ansys, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the Ansys, Inc. online documentation or the Ansys, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * Ansys, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * Ansys, Inc. is a UL registered                              *
+ * ISO 9001:2015 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the Ansys, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the Ansys, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+ 2026 R1 
+     
+ Point Releases and Patches installed:   
+     
+ Ansys, Inc. License Manager 2026 R1 
+ Discovery (full install) 2026 R1
+ Core WB Files 2026 R1   
+ optiSLang Core UI 2026 R1   
+ CFX (includes CFD-Post) 2026 R1 
+ Chemkin 2026 R1 
+ EnSight 2026 R1 
+ FENSAP-ICE 2026 R1  
+ Fluent (includes CFD-Post) 2026 R1  
+ Polyflow (includes CFD-Post) 2026 R1
+ Forte (includes EnSight) 2026 R1
+ Rocky 2026 R1   
+ TurboGrid 2026 R1   
+ ACIS Geometry Interface 2026 R1 
+ AutoCAD Geometry Interface 2026 R1  
+ Catia, Version 4 Geometry Interface 2026 R1 
+ Catia, Version 5 Geometry Interface 2026 R1 
+ Catia, Version 6 Geometry Interface 2026 R1 
+ Creo Elements/Direct Modeling Geometry Interface 2026 R1
+ Creo Parametric Geometry Interface 2026 R1  
+ Inventor Geometry Interface 2026 R1 
+ JTOpen Geometry Interface 2026 R1   
+ NX Geometry Interface 2026 R1   
+ Parasolid Geometry Interface  2026 R1   
+ Solid Edge Geometry Interface 2026 R1   
+ SOLIDWORKS Geometry Interface 2026 R1   
+ Speos 2026 R1   
+ SpaceClaim 2026 R1  
+ Speos RPC 2026 R1   
+ Zemax OpticStudio 2026 R1   
+ Dynamic Reporting 2026 R1   
+ Aqwa 2026 R1
+ Autodyn 2026 R1 
+ Material Calibration App 2026 R1
+ Mechanical Products 2026 R1 
+ Motion 2026 R1  
+ Academic Student 2026 R1
+
+
+          *****  MAPDL COMMAND LINE ARGUMENTS  *****
+  BATCH MODE REQUESTED (-b)    = NOLIST
+  INPUT FILE COPY MODE (-c)    = COPY
+  DISTRIBUTED MEMORY PARALLEL REQUESTED
+       4 PARALLEL PROCESSES REQUESTED WITH SINGLE THREAD PER PROCESS
+    TOTAL OF     4 CORES REQUESTED
+  INPUT FILE NAME              = C:\Users\ncgru\Documents\Projects\PC-Case\FEA-Mock3\_ProjectScratch\Scr3872\dummy.dat
+  OUTPUT FILE NAME             = C:\Users\ncgru\Documents\Projects\PC-Case\FEA-Mock3\_ProjectScratch\Scr3872\solve.out
+  START-UP FILE MODE           = NOREAD
+  STOP FILE MODE               = NOREAD
+
+ RELEASE= 2026 R1              BUILD= 26.1      UP20260202   VERSION=WINDOWS x64 
+ CURRENT JOBNAME=file0  14:34:41  MAY 20, 2026  Elapsed Time=       0.141
+
+
+ PARAMETER _DS_PROGRESS =     999.0000000    
+
+ /INPUT FILE= ds.dat  LINE=       0
+
+
+
+ *** NOTE ***                            ELAPSED TIME =       5.232   TIME= 14:34:41
+ The /CONFIG,NOELDB command is not valid in a distributed memory         
+ parallel solution.  Command is ignored.                                 
+
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE= 0.145871547E-02
+
+ TITLE= 
+ PC-Case--Static Structural (A5)                                               
+
+  ACT Extensions:
+      LSDYNA, 2026.1
+      5f463412-bd3e-484b-87e7-cbc0a665e474, wbex
+      ANSYSMotion, 2026.1
+      20180725-3f81-49eb-9f31-41364844c769, wbex
+
+ SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_PROJECTSCRATCH_DIR(1) = C:\Users\ncgru\Documents\Projects\PC-Case\FEA-Mock3\_ProjectScratch\Scr3872\
+
+ SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_SOLVERFILES_DIR(1) = C:\Users\ncgru\Documents\Projects\PC-Case\FEA-Mock3\PC-Case_files\dp0\SYS\MECH\
+
+ SET PARAMETER DIMENSIONS ON  _WB_USERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_USERFILES_DIR(1) = C:\Users\ncgru\Documents\Projects\PC-Case\FEA-Mock3\PC-Case_files\user_files\
+ --- Data in consistent BIN units. See Solving Units in the help system for more
+
+ U.S. CUSTOMARY INCH UNITS SPECIFIED FOR INTERNAL    
+  LENGTH      = INCHES (IN)
+  MASS        = LBF-S**2/IN 
+  TIME        = SECONDS (SEC)  
+  TEMPERATURE = FAHRENHEIT
+  TOFFSET     = 460.0
+  FORCE       = LBF
+  HEAT        = IN-LBF
+  PRESSURE    = PSI (LBF/IN**2)
+  ENERGY      = IN-LBF
+  POWER       = IN-LBF/SEC
+
+ INPUT  UNITS ARE ALSO SET TO BIN 
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2026 R1          26.1     ***
+ Ansys Mechanical Enterprise Academic Student      
+ 01055371  VERSION=WINDOWS x64   14:34:41  MAY 20, 2026 Elapsed Time=      5.255
+
+ PC-Case--Static Structural (A5)                                               
+
+
+
+          ***** MAPDL ANALYSIS DEFINITION (PREP7) *****
+ *********** Send User Defined Coordinate System(s) ***********
+ *********** Nodes for the whole assembly ***********
+ *********** Elements for Body 1 'Solid' ***********
+ *********** Elements for Body 2 'Solid' ***********
+ *********** Elements for Body 3 'Solid' ***********
+ *********** Elements for Body 4 'Solid' ***********
+ *********** Elements for Body 5 'Solid' ***********
+ *********** Elements for Body 6 'Solid' ***********
+ *********** Elements for Body 7 'Solid' ***********
+ *********** Elements for Body 8 'Solid' ***********
+ *********** Elements for Body 9 'Solid' ***********
+ *********** Elements for Body 10 'Solid' ***********
+ *********** Elements for Body 11 'Solid' ***********
+ *********** Elements for Body 12 'Solid' ***********
+ *********** Elements for Body 13 'Solid1' ***********
+ *********** Elements for Body 14 'Solid1' ***********
+ *********** Elements for Body 15 'Solid1' ***********
+ *********** Elements for Body 16 'Solid1' ***********
+ *********** Elements for Body 17 'Solid1' ***********
+ *********** Elements for Body 18 'Solid1' ***********
+ *********** Elements for Body 19 'Solid1' ***********
+ *********** Elements for Body 20 'Solid1' ***********
+ *********** Elements for Body 21 'Solid11' ***********
+ *********** Elements for Body 22 'Solid1' ***********
+ *********** Elements for Body 23 'Solid11' ***********
+ *********** Elements for Body 24 'Solid1' ***********
+ *********** Elements for Body 25 'Solid1' ***********
+ *********** Elements for Body 26 'Solid1' ***********
+ *********** Elements for Body 27 'Solid1' ***********
+ *********** Elements for Body 28 'Solid1' ***********
+ *********** Elements for Body 29 'Solid1' ***********
+ *********** Elements for Body 30 'Solid1' ***********
+ *********** Elements for Body 31 'Solid1' ***********
+ *********** Elements for Body 32 'Solid11' ***********
+ *********** Elements for Body 33 'Solid11' ***********
+ *********** Elements for Body 34 'Solid11' ***********
+ *********** Elements for Body 35 'Solid111' ***********
+ *********** Elements for Body 36 'Solid11' ***********
+ *********** Elements for Body 37 'Solid111' ***********
+ *********** Elements for Body 38 'Solid1111' ***********
+ *********** Elements for Body 39 'Solid111' ***********
+ *********** Elements for Body 40 'Solid111' ***********
+ *********** Elements for Body 41 'Solid1' ***********
+ *********** Elements for Body 42 'Solid1' ***********
+ *********** Elements for Body 43 'Solid1' ***********
+ *********** Elements for Body 44 'Solid11' ***********
+ *********** Elements for Body 45 'Solid1' ***********
+ *********** Elements for Body 46 'Solid111' ***********
+ *********** Elements for Body 47 'Solid11' ***********
+ *********** Elements for Body 48 'Solid11' ***********
+ *********** Elements for Body 49 'Solid11' ***********
+ *********** Elements for Body 50 'Solid1' ***********
+ *********** Elements for Body 51 'Solid11' ***********
+ *********** Elements for Body 52 'Solid11' ***********
+ *********** Elements for Body 53 'Solid111' ***********
+ *********** Elements for Body 54 'Solid11' ***********
+ *********** Elements for Body 55 'Solid1' ***********
+ *********** Elements for Body 56 'Solid1111' ***********
+ *********** Elements for Body 57 'Solid111' ***********
+ *********** Elements for Body 58 'Solid111' ***********
+ *********** Elements for Body 59 'Solid111' ***********
+ *********** Elements for Body 60 'Solid11' ***********
+ *********** Elements for Body 61 'Solid1111' ***********
+ *********** Elements for Body 62 'Solid111' ***********
+ *********** Elements for Body 63 'Solid111' ***********
+ *********** Elements for Body 64 'Solid111' ***********
+ *********** Elements for Body 65 'Solid1' ***********
+ *********** Elements for Body 66 'Solid11' ***********
+ *********** Elements for Body 67 'Solid1111' ***********
+ *********** Elements for Body 68 'Solid111' ***********
+ *********** Elements for Body 69 'Solid111' ***********
+ *********** Elements for Body 70 'Solid111' ***********
+ *********** Elements for Body 71 'Solid1111' ***********
+ *********** Elements for Body 72 'Solid1111' ***********
+ *********** Elements for Body 73 'Solid11111' ***********
+ *********** Elements for Body 74 'Solid1111' ***********
+ *********** Elements for Body 75 'Solid1' ***********
+ *********** Elements for Body 76 'Solid1' ***********
+ *********** Elements for Body 77 'Solid1' ***********
+ *********** Elements for Body 78 'Solid11' ***********
+ *********** Elements for Body 79 'Solid111' ***********
+ *********** Elements for Body 80 'Solid111' ***********
+ *********** Elements for Body 81 'Solid1111' ***********
+ *********** Elements for Body 82 'Solid11111' ***********
+ *********** Elements for Body 83 'Solid111111' ***********
+ *********** Elements for Body 84 'Solid1111' ***********
+ *********** Elements for Body 85 'Solid11111' ***********
+ *********** Elements for Body 86 'Solid11111' ***********
+ *********** Elements for Body 87 'Solid111111' ***********
+ *********** Elements for Body 88 'Solid111111' ***********
+ *********** Elements for Body 89 'Solid111111' ***********
+ *********** Set Reference Temperature ***********
+ *********** Send Materials ***********
+ *********** Fixed Supports ***********
+ *********** Define Force Using Surface Effect Elements ***********
+ *********** Define Force Using Surface Effect Elements ***********
+ *********** Define Force Using Surface Effect Elements ***********
+ *********** Define Force Using Surface Effect Elements ***********
+
+
+ ***** ROUTINE COMPLETED *****  ELAPSED TIME =         5.415
+
+
+ --- Number of total nodes = 33564
+ --- Number of contact elements = 971
+ --- Number of spring elements = 0
+ --- Number of bearing elements = 0
+ --- Number of solid elements = 5589
+ --- Number of condensed parts = 0
+ --- Number of total elements = 6560
+
+ *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE= 0.150524867E-02
+ ****************************************************************************
+ *************************    SOLUTION       ********************************
+ ****************************************************************************
+
+ *****  MAPDL SOLUTION ROUTINE  *****
+
+
+ PERFORM A STATIC ANALYSIS
+  THIS WILL BE A NEW ANALYSIS
+
+ PARAMETER _THICKRATIO =     0.000000000    
+
+ USE SPARSE MATRIX DIRECT SOLVER
+
+ CONTACT INFORMATION PRINTOUT LEVEL       1
+
+ CHECK INITIAL OPEN/CLOSED STATUS OF SELECTED CONTACT ELEMENTS
+      AND LIST DETAILED CONTACT PAIR INFORMATION
+
+ SPLIT CONTACT SURFACES AT SOLVE PHASE
+
+    NUMBER OF SPLITTING TBD BY PROGRAM
+
+ DO NOT COMBINE ELEMENT MATRIX FILES (.emat) AFTER DISTRIBUTED PARALLEL SOLUTION
+
+ DO NOT COMBINE ELEMENT SAVE DATA FILES (.esav) AFTER DISTRIBUTED PARALLEL SOLUTION
+
+ NLDIAG: Nonlinear diagnostics CONT option is set to ON. 
+         Writing frequency : each ITERATION.
+
+ DO NOT SAVE ANY RESTART FILES AT ALL
+ ****************************************************
+ ******************* SOLVE FOR LS 1 OF 1 ****************
+
+ SELECT       FOR ITEM=TYPE COMPONENT=    
+  IN RANGE        90 TO         90 STEP          1
+
+        288  ELEMENTS (OF       6560  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ SELECT      ALL NODES HAVING ANY ELEMENT IN ELEMENT SET.
+
+       1026 NODES (OF      33564  DEFINED) SELECTED FROM
+      288 SELECTED ELEMENTS BY NSLE COMMAND.
+
+ SPECIFIED SURFACE LOAD PRES FOR ALL SELECTED ELEMENTS  LKEY =  1   KVAL = 1
+     VALUES =     0.0000         0.0000         0.0000         0.0000    
+
+ SPECIFIED SURFACE LOAD PRES FOR ALL SELECTED ELEMENTS  LKEY =  2   KVAL = 1
+     VALUES =   -0.40000       -0.40000       -0.40000       -0.40000    
+
+ SPECIFIED SURFACE LOAD PRES FOR ALL SELECTED ELEMENTS  LKEY =  3   KVAL = 1
+     VALUES =     0.0000         0.0000         0.0000         0.0000    
+
+ SELECT       FOR ITEM=TYPE COMPONENT=    
+  IN RANGE        91 TO         91 STEP          1
+
+        107  ELEMENTS (OF       6560  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ SELECT      ALL NODES HAVING ANY ELEMENT IN ELEMENT SET.
+
+        401 NODES (OF      33564  DEFINED) SELECTED FROM
+      107 SELECTED ELEMENTS BY NSLE COMMAND.
+
+ SPECIFIED SURFACE LOAD PRES FOR ALL SELECTED ELEMENTS  LKEY =  1   KVAL = 1
+     VALUES =     0.0000         0.0000         0.0000         0.0000    
+
+ SPECIFIED SURFACE LOAD PRES FOR ALL SELECTED ELEMENTS  LKEY =  2   KVAL = 1
+     VALUES =    -1.2377        -1.2377        -1.2377        -1.2377    
+
+ SPECIFIED SURFACE LOAD PRES FOR ALL SELECTED ELEMENTS  LKEY =  3   KVAL = 1
+     VALUES =     0.0000         0.0000         0.0000         0.0000    
+
+ SELECT       FOR ITEM=TYPE COMPONENT=    
+  IN RANGE        92 TO         92 STEP          1
+
+        288  ELEMENTS (OF       6560  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ SELECT      ALL NODES HAVING ANY ELEMENT IN ELEMENT SET.
+
+       1026 NODES (OF      33564  DEFINED) SELECTED FROM
+      288 SELECTED ELEMENTS BY NSLE COMMAND.
+
+ SPECIFIED SURFACE LOAD PRES FOR ALL SELECTED ELEMENTS  LKEY =  1   KVAL = 1
+     VALUES =     0.0000         0.0000         0.0000         0.0000    
+
+ SPECIFIED SURFACE LOAD PRES FOR ALL SELECTED ELEMENTS  LKEY =  2   KVAL = 1
+     VALUES =   -0.24000       -0.24000       -0.24000       -0.24000    
+
+ SPECIFIED SURFACE LOAD PRES FOR ALL SELECTED ELEMENTS  LKEY =  3   KVAL = 1
+     VALUES =     0.0000         0.0000         0.0000         0.0000    
+
+ SELECT       FOR ITEM=TYPE COMPONENT=    
+  IN RANGE        93 TO         93 STEP          1
+
+        288  ELEMENTS (OF       6560  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ SELECT      ALL NODES HAVING ANY ELEMENT IN ELEMENT SET.
+
+       1026 NODES (OF      33564  DEFINED) SELECTED FROM
+      288 SELECTED ELEMENTS BY NSLE COMMAND.
+
+ SPECIFIED SURFACE LOAD PRES FOR ALL SELECTED ELEMENTS  LKEY =  1   KVAL = 1
+     VALUES =     0.0000         0.0000         0.0000         0.0000    
+
+ SPECIFIED SURFACE LOAD PRES FOR ALL SELECTED ELEMENTS  LKEY =  2   KVAL = 1
+     VALUES =   -0.20000       -0.20000       -0.20000       -0.20000    
+
+ SPECIFIED SURFACE LOAD PRES FOR ALL SELECTED ELEMENTS  LKEY =  3   KVAL = 1
+     VALUES =     0.0000         0.0000         0.0000         0.0000    
+
+ ALL SELECT   FOR ITEM=NODE COMPONENT=    
+  IN RANGE         1 TO      33564 STEP          1
+
+      33564  NODES (OF      33564  DEFINED) SELECTED BY NSEL  COMMAND.
+
+ ALL SELECT   FOR ITEM=ELEM COMPONENT=    
+  IN RANGE         1 TO      15802 STEP          1
+
+       6560  ELEMENTS (OF       6560  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ PRINTOUT RESUMED BY /GOP
+
+ USE       1 SUBSTEPS INITIALLY THIS LOAD STEP FOR ALL  DEGREES OF FREEDOM
+ FOR AUTOMATIC TIME STEPPING:
+   USE      1 SUBSTEPS AS A MAXIMUM
+   USE      1 SUBSTEPS AS A MINIMUM
+
+ TIME=  1.0000    
+
+ ERASE THE CURRENT DATABASE OUTPUT CONTROL TABLE.
+
+
+ WRITE ALL  ITEMS TO THE DATABASE WITH A FREQUENCY OF NONE
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE NSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE RSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EANG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE ETMP ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE VENG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE STRS ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPEL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPPL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE CONT ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ *GET  ANSINTER_  FROM  ACTI  ITEM=INT        VALUE=  0.00000000    
+
+ *IF  ANSINTER_  ( =   0.00000     )  NE  
+      0  ( =   0.00000     )  THEN    
+
+ *ENDIF
+
+ *** NOTE ***                            ELAPSED TIME =       5.505   TIME= 14:34:41
+ The automatic domain decomposition logic has selected the MESH domain   
+ decomposition method with 4 processes per solution.                     
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         ELAPSED TIME =       5.575   TIME= 14:34:41
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** NOTE ***                            ELAPSED TIME =       5.591   TIME= 14:34:41
+ The model data was checked and warning messages were found.             
+  Please review output or errors file (                                  
+ C:\Users\ncgru\Documents\Projects\PC-Case\FEA-Mock3\_ProjectScratch\Scr 
+ r3872\file0.err ) for these warning messages.                           
+
+ *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
+      --- GIVE SUGGESTIONS AND RESET THE KEY OPTIONS ---
+
+ ELEMENT TYPE         1 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE         2 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE         3 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE         4 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE         5 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE         6 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE         7 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE         8 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE         9 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        10 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        11 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        12 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        13 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        14 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        15 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        16 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        17 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        18 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        19 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        20 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        21 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        22 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        23 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        24 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        25 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        26 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        27 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        28 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        29 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        30 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        31 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        32 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        33 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        34 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        35 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        36 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        37 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        38 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        39 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        40 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        41 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        42 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        43 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        44 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        45 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        46 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        47 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        48 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        49 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        50 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        51 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        52 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        53 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        54 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        55 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        56 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        57 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        58 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        59 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        60 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        61 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        62 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        63 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        64 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        65 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        66 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        67 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        68 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        69 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        70 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        71 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        72 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        73 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        74 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        75 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        76 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        77 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        78 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        79 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        80 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        81 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        82 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        83 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        84 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        85 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        86 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        87 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        88 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        89 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2026 R1          26.1     ***
+ Ansys Mechanical Enterprise Academic Student      
+ 01055371  VERSION=WINDOWS x64   14:34:41  MAY 20, 2026 Elapsed Time=      5.597
+
+ PC-Case--Static Structural (A5)                                               
+
+
+
+                       S O L U T I O N   O P T I O N S
+
+   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  
+   DEGREES OF FREEDOM. . . . . . UX   UY   UZ  
+   ANALYSIS TYPE . . . . . . . . . . . . . . . . .STATIC (STEADY-STATE)
+   OFFSET TEMPERATURE FROM ABSOLUTE ZERO . . . . .  459.67    
+   EQUATION SOLVER OPTION. . . . . . . . . . . . .SPARSE             
+   GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
+
+ *** WARNING ***                         ELAPSED TIME =       5.607   TIME= 14:34:41
+ Material number 90 (used by element 14832) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** NOTE ***                            ELAPSED TIME =       5.612   TIME= 14:34:41
+ The step data was checked and warning messages were found.              
+  Please review output or errors file (                                  
+ C:\Users\ncgru\Documents\Projects\PC-Case\FEA-Mock3\_ProjectScratch\Scr 
+ r3872\file0.err ) for these warning messages.                           
+
+ *** NOTE ***                            ELAPSED TIME =       5.613   TIME= 14:34:41
+ The conditions for direct assembly have been met.  No .emat or .erot    
+ files will be produced.                                                 
+
+  
+  
+     D I S T R I B U T E D   D O M A I N   D E C O M P O S E R
+  
+  ...Number of elements: 6560
+  ...Number of nodes:    33564
+  ...Decompose to 4 CPU domains
+  ...Element load balance ratio =     1.043
+
+
+                      L O A D   S T E P   O P T I O N S
+
+   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1
+   TIME AT END OF THE LOAD STEP. . . . . . . . . .  1.0000    
+   NUMBER OF SUBSTEPS. . . . . . . . . . . . . . .     1
+   STEP CHANGE BOUNDARY CONDITIONS . . . . . . . .    NO
+   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT
+   DATABASE OUTPUT CONTROLS
+      ITEM     FREQUENCY   COMPONENT
+       ALL       NONE               
+      NSOL        ALL               
+      RSOL        ALL               
+      EANG        ALL               
+      ETMP        ALL               
+      VENG        ALL               
+      STRS        ALL               
+      EPEL        ALL               
+      EPPL        ALL               
+      CONT        ALL               
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+
+
+                         ***********  PRECISE MASS SUMMARY  ***********
+
+   TOTAL RIGID BODY MASS MATRIX ABOUT ORIGIN
+               Translational mass               |   Coupled translational/rotational mass
+        0.63671E-02    0.0000        0.0000     |     0.0000      -0.21487E-01  -0.95476E-02
+         0.0000       0.63671E-02    0.0000     |    0.21487E-01    0.0000       0.61790E-01
+         0.0000        0.0000       0.63671E-02 |    0.95476E-02  -0.61790E-01    0.0000    
+     ------------------------------------------ | ------------------------------------------
+                                                |         Rotational mass (inertia)
+                                                |    0.22025      -0.85368E-01   0.20852    
+                                                |   -0.85368E-01   0.88608       0.32197E-01
+                                                |    0.20852       0.32197E-01   0.91276    
+
+   TOTAL MASS = 0.63671E-02
+     The mass principal axes coincide with the global Cartesian axes
+
+   CENTER OF MASS (X,Y,Z)=    9.7045        1.4995       -3.3747    
+
+   TOTAL INERTIA ABOUT CENTER OF MASS
+        0.13342       0.72860E-02   0.15272E-05
+        0.72860E-02   0.21393      -0.23023E-04
+        0.15272E-05  -0.23023E-04   0.29881    
+
+   PRINCIPAL INERTIAS =   0.13276       0.21458       0.29881    
+   ORIENTATION VECTORS OF THE INERTIA PRINCIPAL AXES IN GLOBAL CARTESIAN
+     ( 0.996,-0.089,-0.000) ( 0.089, 0.996, 0.000) (-0.000,-0.000, 1.000) 
+
+
+  *** MASS SUMMARY BY ELEMENT TYPE ***
+
+  TYPE      MASS
+     1  0.556376E-03
+     4  0.223514E-04
+     5  0.223514E-04
+    10  0.662812E-03
+    11  0.616903E-04
+    12  0.616903E-04
+    29  0.220720E-04
+    30  0.266540E-03
+    31  0.266540E-03
+    32  0.220720E-04
+    33  0.126924E-04
+    34  0.126924E-04
+    35  0.126924E-04
+    36  0.126924E-04
+    37  0.126924E-04
+    38  0.126924E-04
+    39  0.126924E-04
+    40  0.126924E-04
+    41  0.143466E-05
+    42  0.143466E-05
+    43  0.286931E-05
+    44  0.286931E-05
+    45  0.301278E-04
+    46  0.286931E-05
+    47  0.143466E-05
+    48  0.286931E-05
+    49  0.143466E-05
+    50  0.301278E-04
+    51  0.220937E-03
+    52  0.110469E-03
+    53  0.220937E-03
+    54  0.110469E-03
+    55  0.241022E-03
+    56  0.229545E-04
+    57  0.114773E-04
+    58  0.229545E-04
+    59  0.114773E-04
+    60  0.241022E-03
+    61  0.229545E-04
+    62  0.114773E-04
+    63  0.229545E-04
+    64  0.114773E-04
+    65  0.994217E-03
+    66  0.645596E-04
+    67  0.616903E-04
+    68  0.616903E-04
+    69  0.616903E-04
+    70  0.616903E-04
+    71  0.358664E-05
+    72  0.717329E-05
+    73  0.717329E-05
+    74  0.717329E-05
+    75  0.717329E-05
+    76  0.717329E-05
+    77  0.430397E-04
+    78  0.994217E-03
+    79  0.645596E-04
+    80  0.331406E-03
+    81  0.215199E-04
+    82  0.717329E-05
+    83  0.358664E-05
+    84  0.308451E-04
+    85  0.308451E-04
+    86  0.308451E-04
+    87  0.308451E-04
+    88  0.358664E-05
+    89  0.358664E-05
+
+ Range of element maximum matrix coefficients in global coordinates
+ Maximum = 119225200 at element 5032.                                    
+ Minimum = 361840.79 at element 164.                                     
+
+   *** ELEMENT MATRIX FORMULATION TIMES
+     TYPE    NUMBER     ENAME   TOTAL ELAPSED   AVG ELAPSED
+
+        1       107  SOLID186          0.0169   0.000157618
+        2        32  SOLID186          0.0040   0.000123609
+        3        32  SOLID186          0.0042   0.000131625
+        4         6  SOLID186          0.0007   0.000117217
+        5         6  SOLID186          0.0008   0.000131550
+        6        32  SOLID186          0.0041   0.000129459
+        7        30  SOLID186          0.0038   0.000127403
+        8        32  SOLID186          0.0040   0.000125256
+        9        32  SOLID186          0.0045   0.000141487
+       10        96  SOLID186          0.0145   0.000150886
+       11        10  SOLID186          0.0016   0.000156600
+       12        10  SOLID186          0.0299   0.002992830
+       13        48  SOLID186          0.0057   0.000118440
+       14        48  SOLID186          0.0053   0.000110221
+       15        48  SOLID186          0.0083   0.000172450
+       16        48  SOLID186          0.0056   0.000115983
+       17        32  SOLID186          0.0184   0.000576275
+       18        32  SOLID186          0.0045   0.000140319
+       19        30  SOLID186          0.0037   0.000123570
+       20        32  SOLID186          0.0045   0.000139116
+       21       576  SOLID186          0.0866   0.000150394
+       22        32  SOLID186          0.0036   0.000113272
+       23        32  SOLID186          0.0040   0.000126463
+       24       576  SOLID186          0.0743   0.000128988
+       25       576  SOLID186          0.0710   0.000123286
+       26       576  SOLID186          0.0745   0.000129274
+       27       576  SOLID186          0.0797   0.000138379
+       28       576  SOLID186          0.0859   0.000149089
+       29         6  SOLID186          0.0007   0.000122717
+       30        63  SOLID186          0.0081   0.000129025
+       31        63  SOLID186          0.0077   0.000122265
+       32         6  SOLID186          0.0008   0.000126183
+       33         6  SOLID186          0.0007   0.000123633
+       34         6  SOLID186          0.0007   0.000119517
+       35         6  SOLID186          0.0008   0.000125717
+       36         6  SOLID186          0.0007   0.000121550
+       37         6  SOLID186          0.0007   0.000118283
+       38         6  SOLID186          0.0007   0.000123017
+       39         6  SOLID186          0.0009   0.000146917
+       40         6  SOLID186          0.0007   0.000118950
+       41         2  SOLID186          0.0002   0.000122150
+       42         2  SOLID186          0.0004   0.000206950
+       43         4  SOLID186          0.0005   0.000118575
+       44         4  SOLID186          0.0007   0.000166900
+       45        16  SOLID186          0.0024   0.000150488
+       46         4  SOLID186          0.0009   0.000212600
+       47         2  SOLID186          0.0004   0.000201800
+       48         4  SOLID186          0.0006   0.000144700
+       49         2  SOLID186          0.0003   0.000164950
+       50        16  SOLID186          0.0023   0.000145850
+       51        96  SOLID186          0.0115   0.000119459
+       52        48  SOLID186          0.0058   0.000120796
+       53        96  SOLID186          0.0157   0.000163727
+       54        48  SOLID186          0.0098   0.000204523
+       55        64  SOLID186          0.0078   0.000122292
+       56        16  SOLID186          0.0026   0.000159669
+       57         8  SOLID186          0.0017   0.000212425
+       58        16  SOLID186          0.0019   0.000119700
+       59         8  SOLID186          0.0010   0.000122162
+       60        64  SOLID186          0.0093   0.000145645
+       61        16  SOLID186          0.0035   0.000217412
+       62         8  SOLID186          0.0017   0.000207600
+       63        16  SOLID186          0.0022   0.000137675
+       64         8  SOLID186          0.0012   0.000146787
+       65       144  SOLID186          0.0180   0.000125202
+       66        12  SOLID186          0.0014   0.000118008
+       67        20  SOLID186          0.0043   0.000213500
+       68        20  SOLID186          0.0041   0.000206010
+       69        20  SOLID186          0.0029   0.000147200
+       70        20  SOLID186          0.0031   0.000154130
+       71         2  SOLID186          0.0003   0.000125450
+       72         4  SOLID186          0.0005   0.000119000
+       73         4  SOLID186          0.0008   0.000210850
+       74         4  SOLID186          0.0008   0.000209350
+       75         2  SOLID186          0.0004   0.000208750
+       76         2  SOLID186          0.0003   0.000146850
+       77         8  SOLID186          0.0152   0.001894713
+       78       144  SOLID186          0.0184   0.000127701
+       79        12  SOLID186          0.0017   0.000138283
+       80        96  SOLID186          0.0117   0.000121905
+       81         8  SOLID186          0.0011   0.000138475
+       82         4  SOLID186          0.0005   0.000122800
+       83         2  SOLID186          0.0002   0.000123550
+       84        10  SOLID186          0.0014   0.000144350
+       85        10  SOLID186          0.0014   0.000144250
+       86        10  SOLID186          0.0018   0.000184420
+       87        10  SOLID186          0.0020   0.000195150
+       88         2  SOLID186          0.0002   0.000122400
+       89         2  SOLID186          0.0003   0.000167150
+       90       288   SURF154          0.0098   0.000034183
+       91       107   SURF154          0.0031   0.000028859
+       92       288   SURF154          0.0113   0.000039132
+       93       288   SURF154          0.0109   0.000037968
+ Elapsed Time at end of element matrix formulation = 6.0680649.          
+
+ DISTRIBUTED SPARSE MATRIX DIRECT SOLVER.
+  Number of equations =       98352,    Maximum wavefront =    243
+
+
+  Memory allocated on only this MPI rank (rank     0)
+  -------------------------------------------------------------------
+  Equation solver memory allocated                     =   138.783 MB
+  Equation solver memory required for in-core mode     =   133.469 MB
+  Equation solver memory required for out-of-core mode =    77.797 MB
+  Total (solver and non-solver) memory allocated       =   670.881 MB
+
+
+  Total memory summed across all MPI ranks on this machines
+  -------------------------------------------------------------------
+  Equation solver memory allocated                     =   555.438 MB
+  Equation solver memory required for in-core mode     =   534.124 MB
+  Equation solver memory required for out-of-core mode =   307.526 MB
+  Total (solver and non-solver) memory allocated       =  1782.333 MB
+
+ *** NOTE ***                            ELAPSED TIME =       6.426   TIME= 14:34:42
+ The Distributed Sparse Matrix Solver is currently running in the        
+ in-core memory mode.  This memory mode uses the most amount of memory   
+ in order to avoid using the hard drive as much as possible, which most  
+ often results in the fastest solution time.  This mode is recommended   
+ if enough physical memory is present to accommodate all of the solver   
+ data.                                                                   
+ curEqn=  24756  totEqn=  24756 Job CP sec=      3.500
+      Factor Done= 100% Factor Wall sec=      0.419 rate=       8.6 GFlops
+ Distributed sparse solver maximum pivot= 71108006.5 at node 30065 UY.   
+ Distributed sparse solver minimum pivot= 126.950202 at node 32304 UZ.   
+ Distributed sparse solver minimum pivot in absolute value= 126.950202   
+ at node 32304 UZ.                                                       
+
+   *** ELEMENT RESULT CALCULATION TIMES
+     TYPE    NUMBER     ENAME   TOTAL ELAPSED   AVG ELAPSED
+
+        1       107  SOLID186          0.0139   0.000129959
+        2        32  SOLID186          0.0027   0.000083778
+        3        32  SOLID186          0.0039   0.000123191
+        4         6  SOLID186          0.0010   0.000160883
+        5         6  SOLID186          0.0006   0.000094533
+        6        32  SOLID186          0.0038   0.000118959
+        7        30  SOLID186          0.0028   0.000094833
+        8        32  SOLID186          0.0027   0.000084200
+        9        32  SOLID186          0.0051   0.000158678
+       10        96  SOLID186          0.0144   0.000150110
+       11        10  SOLID186          0.0013   0.000130080
+       12        10  SOLID186          0.0091   0.000909140
+       13        48  SOLID186          0.0066   0.000136662
+       14        48  SOLID186          0.0039   0.000081148
+       15        48  SOLID186          0.0047   0.000098438
+       16        48  SOLID186          0.0039   0.000080396
+       17        32  SOLID186          0.0077   0.000240728
+       18        32  SOLID186          0.0035   0.000109403
+       19        30  SOLID186          0.0028   0.000091953
+       20        32  SOLID186          0.0052   0.000161141
+       21       576  SOLID186          0.0552   0.000095916
+       22        32  SOLID186          0.0025   0.000079619
+       23        32  SOLID186          0.0027   0.000085347
+       24       576  SOLID186          0.0557   0.000096776
+       25       576  SOLID186          0.0773   0.000134208
+       26       576  SOLID186          0.0807   0.000140111
+       27       576  SOLID186          0.0564   0.000097937
+       28       576  SOLID186          0.0672   0.000116610
+       29         6  SOLID186          0.0005   0.000081033
+       30        63  SOLID186          0.0053   0.000083524
+       31        63  SOLID186          0.0069   0.000109692
+       32         6  SOLID186          0.0006   0.000101983
+       33         6  SOLID186          0.0006   0.000096600
+       34         6  SOLID186          0.0005   0.000079267
+       35         6  SOLID186          0.0007   0.000121650
+       36         6  SOLID186          0.0010   0.000159267
+       37         6  SOLID186          0.0010   0.000162133
+       38         6  SOLID186          0.0008   0.000131833
+       39         6  SOLID186          0.0006   0.000096133
+       40         6  SOLID186          0.0005   0.000077617
+       41         2  SOLID186          0.0003   0.000160500
+       42         2  SOLID186          0.0003   0.000146750
+       43         4  SOLID186          0.0006   0.000159825
+       44         4  SOLID186          0.0007   0.000167450
+       45        16  SOLID186          0.0015   0.000096769
+       46         4  SOLID186          0.0003   0.000076850
+       47         2  SOLID186          0.0004   0.000206550
+       48         4  SOLID186          0.0003   0.000080925
+       49         2  SOLID186          0.0001   0.000074300
+       50        16  SOLID186          0.0024   0.000152650
+       51        96  SOLID186          0.0152   0.000158535
+       52        48  SOLID186          0.0074   0.000155054
+       53        96  SOLID186          0.0146   0.000151655
+       54        48  SOLID186          0.0072   0.000149448
+       55        64  SOLID186          0.0092   0.000144313
+       56        16  SOLID186          0.0024   0.000151163
+       57         8  SOLID186          0.0012   0.000146650
+       58        16  SOLID186          0.0026   0.000162106
+       59         8  SOLID186          0.0015   0.000186575
+       60        64  SOLID186          0.0063   0.000098747
+       61        16  SOLID186          0.0012   0.000075600
+       62         8  SOLID186          0.0008   0.000096275
+       63        16  SOLID186          0.0023   0.000142856
+       64         8  SOLID186          0.0012   0.000146337
+       65       144  SOLID186          0.0280   0.000194485
+       66        12  SOLID186          0.0017   0.000141058
+       67        20  SOLID186          0.0021   0.000102840
+       68        20  SOLID186          0.0021   0.000105215
+       69        20  SOLID186          0.0027   0.000134020
+       70        20  SOLID186          0.0025   0.000127375
+       71         2  SOLID186          0.0007   0.000342250
+       72         4  SOLID186          0.0006   0.000156875
+       73         4  SOLID186          0.0006   0.000142825
+       74         4  SOLID186          0.0006   0.000146550
+       75         2  SOLID186          0.0003   0.000159150
+       76         2  SOLID186          0.0003   0.000148250
+       77         8  SOLID186          0.0043   0.000535962
+       78       144  SOLID186          0.0212   0.000147358
+       79        12  SOLID186          0.0028   0.000230925
+       80        96  SOLID186          0.0143   0.000149017
+       81         8  SOLID186          0.0012   0.000151812
+       82         4  SOLID186          0.0006   0.000156850
+       83         2  SOLID186          0.0003   0.000160750
+       84        10  SOLID186          0.0021   0.000206030
+       85        10  SOLID186          0.0014   0.000136720
+       86        10  SOLID186          0.0008   0.000081760
+       87        10  SOLID186          0.0011   0.000105290
+       88         2  SOLID186          0.0004   0.000184100
+       89         2  SOLID186          0.0003   0.000150250
+       90       288   SURF154          0.0091   0.000031737
+       91       107   SURF154          0.0039   0.000036912
+       92       288   SURF154          0.0108   0.000037592
+       93       288   SURF154          0.0110   0.000038285
+
+   *** NODAL LOAD CALCULATION TIMES
+     TYPE    NUMBER     ENAME   TOTAL ELAPSED   AVG ELAPSED
+
+        1       107  SOLID186          0.0019   0.000018119
+        2        32  SOLID186          0.0004   0.000010994
+        3        32  SOLID186          0.0005   0.000016584
+        4         6  SOLID186          0.0001   0.000021700
+        5         6  SOLID186          0.0001   0.000012167
+        6        32  SOLID186          0.0005   0.000016503
+        7        30  SOLID186          0.0004   0.000013187
+        8        32  SOLID186          0.0004   0.000012225
+        9        32  SOLID186          0.0007   0.000021928
+       10        96  SOLID186          0.0020   0.000020757
+       11        10  SOLID186          0.0002   0.000018020
+       12        10  SOLID186          0.0042   0.000420240
+       13        48  SOLID186          0.0010   0.000021217
+       14        48  SOLID186          0.0005   0.000010846
+       15        48  SOLID186          0.0006   0.000013058
+       16        48  SOLID186          0.0005   0.000010854
+       17        32  SOLID186          0.0029   0.000089466
+       18        32  SOLID186          0.0005   0.000014284
+       19        30  SOLID186          0.0004   0.000012523
+       20        32  SOLID186          0.0008   0.000026237
+       21       576  SOLID186          0.0077   0.000013404
+       22        32  SOLID186          0.0004   0.000011250
+       23        32  SOLID186          0.0004   0.000011706
+       24       576  SOLID186          0.0076   0.000013251
+       25       576  SOLID186          0.0103   0.000017935
+       26       576  SOLID186          0.0109   0.000018976
+       27       576  SOLID186          0.0083   0.000014434
+       28       576  SOLID186          0.0098   0.000017003
+       29         6  SOLID186          0.0001   0.000010767
+       30        63  SOLID186          0.0007   0.000011068
+       31        63  SOLID186          0.0010   0.000015495
+       32         6  SOLID186          0.0001   0.000018667
+       33         6  SOLID186          0.0001   0.000013400
+       34         6  SOLID186          0.0001   0.000010650
+       35         6  SOLID186          0.0001   0.000017833
+       36         6  SOLID186          0.0001   0.000021867
+       37         6  SOLID186          0.0001   0.000021817
+       38         6  SOLID186          0.0001   0.000022200
+       39         6  SOLID186          0.0001   0.000012667
+       40         6  SOLID186          0.0001   0.000014617
+       41         2  SOLID186          0.0000   0.000022050
+       42         2  SOLID186          0.0000   0.000020250
+       43         4  SOLID186          0.0002   0.000043200
+       44         4  SOLID186          0.0001   0.000022075
+       45        16  SOLID186          0.0002   0.000014400
+       46         4  SOLID186          0.0001   0.000013350
+       47         2  SOLID186          0.0000   0.000020800
+       48         4  SOLID186          0.0000   0.000011250
+       49         2  SOLID186          0.0000   0.000011150
+       50        16  SOLID186          0.0008   0.000050219
+       51        96  SOLID186          0.0022   0.000022867
+       52        48  SOLID186          0.0011   0.000021969
+       53        96  SOLID186          0.0021   0.000021528
+       54        48  SOLID186          0.0010   0.000021215
+       55        64  SOLID186          0.0013   0.000020442
+       56        16  SOLID186          0.0003   0.000021219
+       57         8  SOLID186          0.0002   0.000020625
+       58        16  SOLID186          0.0003   0.000021200
+       59         8  SOLID186          0.0002   0.000022612
+       60        64  SOLID186          0.0009   0.000014600
+       61        16  SOLID186          0.0002   0.000011194
+       62         8  SOLID186          0.0001   0.000013887
+       63        16  SOLID186          0.0003   0.000021263
+       64         8  SOLID186          0.0002   0.000020637
+       65       144  SOLID186          0.0032   0.000022276
+       66        12  SOLID186          0.0002   0.000020083
+       67        20  SOLID186          0.0003   0.000016480
+       68        20  SOLID186          0.0003   0.000016140
+       69        20  SOLID186          0.0004   0.000018965
+       70        20  SOLID186          0.0004   0.000019870
+       71         2  SOLID186          0.0001   0.000027550
+       72         4  SOLID186          0.0001   0.000022075
+       73         4  SOLID186          0.0001   0.000021125
+       74         4  SOLID186          0.0001   0.000020800
+       75         2  SOLID186          0.0000   0.000021800
+       76         2  SOLID186          0.0000   0.000020550
+       77         8  SOLID186          0.0022   0.000271925
+       78       144  SOLID186          0.0029   0.000020219
+       79        12  SOLID186          0.0003   0.000028200
+       80        96  SOLID186          0.0021   0.000021472
+       81         8  SOLID186          0.0002   0.000021525
+       82         4  SOLID186          0.0001   0.000021925
+       83         2  SOLID186          0.0000   0.000022400
+       84        10  SOLID186          0.0002   0.000020650
+       85        10  SOLID186          0.0002   0.000019490
+       86        10  SOLID186          0.0001   0.000012090
+       87        10  SOLID186          0.0001   0.000014950
+       88         2  SOLID186          0.0000   0.000024450
+       89         2  SOLID186          0.0000   0.000021300
+       90       288   SURF154          0.0006   0.000002060
+       91       107   SURF154          0.0003   0.000002697
+       92       288   SURF154          0.0006   0.000002165
+       93       288   SURF154          0.0006   0.000002028
+ *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      1
+ *** TIME =   1.00000         TIME INC =   1.00000      NEW TRIANG MATRIX
+
+
+ *** MAPDL BINARY FILE STATISTICS
+  BUFFER SIZE USED= 16384
+       17.312 MB WRITTEN ON ASSEMBLED MATRIX FILE: file0.full
+        2.438 MB WRITTEN ON RESULTS FILE: file0.rst
+ *************** Write FE CONNECTORS *********
+
+ WRITE OUT CONSTRAINT EQUATIONS TO FILE= file.ce                                                                                                                                                                                                                                                             
+ ****************************************************
+ *************** FINISHED SOLVE FOR LS 1 *************
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  ELAPSED TIME =         7.677
+
+
+
+ *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE= 0.213269333E-02
+
+ PRINTOUT RESUMED BY /GOP
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2026 R1          26.1     ***
+ Ansys Mechanical Enterprise Academic Student      
+ 01055371  VERSION=WINDOWS x64   14:34:43  MAY 20, 2026 Elapsed Time=      7.691
+
+ PC-Case--Static Structural (A5)                                               
+
+
+
+          ***** MAPDL RESULTS INTERPRETATION (POST1) *****
+
+ *** NOTE ***                            ELAPSED TIME =       7.692   TIME= 14:34:43
+ Reading results into the database (SET command) will update the current 
+ displacement and force boundary conditions in the database with the     
+ values from the results file for that load set.  Note that any          
+ subsequent solutions will use these values unless action is taken to    
+ either SAVE the current values or not overwrite them (/EXIT,NOSAVE).    
+
+ Set Encoding of XML File to:ISO-8859-1
+
+ Set Output of XML File to:
+     PARM,     ,     ,     ,     ,     ,     ,     ,     ,     ,     ,     ,
+         ,     ,     ,     ,     ,     ,     ,
+
+ DATABASE WRITTEN ON FILE  parm.xml                                                                                                                                                                                                                                                            
+
+ EXIT THE MAPDL POST1 DATABASE PROCESSOR
+
+
+ ***** ROUTINE COMPLETED *****  ELAPSED TIME =         7.696
+
+
+
+ PRINTOUT RESUMED BY /GOP
+
+ *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE= 0.213791250E-02
+
+ PARAMETER _PREPTIME =    0.1675195000    
+
+ PARAMETER _SOLVTIME =     2.258800800    
+
+ PARAMETER _POSTTIME =    0.1878900000E-01
+
+ PARAMETER _TOTALTIM =     2.445109300    
+
+ *GET  _DLBRATIO  FROM  ACTI  ITEM=SOLU DLBR  VALUE=  1.04329268    
+
+ *GET  _COMBTIME  FROM  ACTI  ITEM=SOLU COMB  VALUE= 0.816926000E-01
+
+ *GET  _SSMODE   FROM  ACTI  ITEM=SOLU SSMM  VALUE=  2.00000000    
+
+ *GET  _NDOFS    FROM  ACTI  ITEM=SOLU NDOF  VALUE=  98352.0000    
+
+ *GET  _SOL_END_TIME  FROM  ACTI  ITEM=SET  TIME  VALUE=  1.00000000    
+
+ *IF  _sol_end_time  ( =   1.00000     )  EQ  
+      1.000000  ( =   1.00000     )  THEN    
+
+ /FCLEAN COMMAND REMOVING ALL LOCAL FILES
+
+ *ENDIF
+ --- Total number of nodes = 33564
+ --- Total number of elements = 6560
+ --- Element load balance ratio = 1.04329268
+ --- Time to combine distributed files = 8.16926E-02
+ --- Sparse memory mode = 2
+ --- Number of DOF = 98352
+
+ EXIT MAPDL WITHOUT SAVING DATABASE
+
+
+ NUMBER OF WARNING MESSAGES ENCOUNTERED=          2
+ NUMBER OF ERROR   MESSAGES ENCOUNTERED=          0
+
++--------------------- M A P D L   S T A T I S T I C S ------------------------+
+
+Release: 2026 R1            Build: 26.1       Update: UP20260202   Platform: WINDOWS x64 
+Date Run: 05/20/2026   Time: 14:35     Process ID: 11172
+Operating System: Windows 11  (Build: 26200)
+
+Processor Model: Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz
+
+Compiler: Intel(R) Fortran Compiler Classic Version 2021.9  (Build: 20230302)
+          Intel(R) C/C++ Compiler Classic Version 2021.9  (Build: 20230302)
+          Intel(R) oneAPI Math Kernel Library Version 2024.2.3-Product Build 20250403
+
+Number of machines requested            :    1
+Total number of cores available         :    8
+Number of physical cores available      :    4
+Number of processes requested           :    4
+Number of threads per process requested :    1
+Total number of cores requested         :    4 (Distributed Memory Parallel)               
+MPI Type: INTELMPI
+MPI Version: Intel(R) MPI Library 2021.16 for Windows* OS
+
+
+GPU Acceleration: Not Requested
+
+Job Name: file0
+Input File: dummy.dat
+
+  Core                Machine Name   Working Directory
+ -----------------------------------------------------
+     0                 supercooper   C:\Users\ncgru\Documents\Projects\PC-Case\FEA-Mock3\_ProjectScratch\Scr3872
+     1                 supercooper   C:\Users\ncgru\Documents\Projects\PC-Case\FEA-Mock3\_ProjectScratch\Scr3872
+     2                 supercooper   C:\Users\ncgru\Documents\Projects\PC-Case\FEA-Mock3\_ProjectScratch\Scr3872
+     3                 supercooper   C:\Users\ncgru\Documents\Projects\PC-Case\FEA-Mock3\_ProjectScratch\Scr3872
+ 
+Latency time from master to core     1 =    4.174 microseconds
+Latency time from master to core     2 =    5.200 microseconds
+Latency time from master to core     3 =    6.598 microseconds
+ 
+Communication speed from master to core     1 =  3035.79 MB/sec
+Communication speed from master to core     2 =  4091.23 MB/sec
+Communication speed from master to core     3 =  4115.33 MB/sec
+
+Total CPU time for main thread                    :        2.9 seconds
+Total CPU time summed for all threads             :        5.0 seconds
+
+Elapsed time spent obtaining a license            :        0.6 seconds
+Elapsed time spent pre-processing model (/PREP7)  :        0.2 seconds
+Elapsed time spent solution - preprocessing       :        0.2 seconds
+Elapsed time spent computing solution             :        1.7 seconds
+   Elapsed time in element formation & assembly   :        0.3 seconds
+   Elapsed time in equation solver                :        1.1 seconds
+   Elapsed time in element result calculations    :        0.3 seconds
+Elapsed time spent solution - postprocessing      :        0.1 seconds
+Elapsed time spent post-processing model (/POST1) :        0.0 seconds
+ 
+Equation solver used                              :            Sparse (symmetric)
+Sparse direct equation solver computational rate  :       34.0 Gflops
+Sparse direct equation solver effective I/O rate  :       15.7 GB/sec
+
+Sum of disk space used on all processes           :       94.5 MB
+
+Sum of memory used on all processes               :      731.0 MB
+Sum of memory allocated on all processes          :     3216.0 MB
+Physical memory available                         :         12 GB
+Total amount of I/O written to disk               :        0.0 GB
+Total amount of I/O read from disk                :        0.0 GB
+
++------------------ E N D   M A P D L   S T A T I S T I C S -------------------+
+
+
+ *-----------------------------------------------------------------------------*
+ |                                                                             |
+ |                               RUN COMPLETED                                 |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |  Ansys MAPDL 2026 R1         Build 26.1         UP20260202    WINDOWS x64   |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |  Database Requested(-db)     1024 MB     Scratch Memory Requested   1024 MB |
+ |  Max Database Used(Master)     18 MB     Max Scratch Used(Master)    181 MB |
+ |  Max Database Used(Workers)     1 MB     Max Scratch Used(Workers)   184 MB |
+ |  Sum Database Used(All)        21 MB     Sum Scratch Used(All)       710 MB |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |        CP Time      (sec) =          4.984       Time  =  14:35:05          |
+ |        Elapsed Time (sec) =         28.833       Date  =  05/20/2026        |
+ |                                                                             |
+ *-----------------------------------------------------------------------------*

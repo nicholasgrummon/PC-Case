@@ -1,0 +1,16 @@
+# encoding: utf-8
+# 2026 R1
+SetScriptVersion(Version="26.1.174")
+system1 = GetSystem(Name="FFF")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath="C:/Users/ncgru/Documents/Projects/PC-Case/CAD-Mock4 (Simplified)/PC-Case4-fluidmodel.iges")
+meshComponent1 = system1.GetComponent(Name="Mesh")
+meshComponent1.Refresh()
+mesh1 = system1.GetContainer(ComponentName="Mesh")
+mesh1.Edit()
+mesh1.Exit()
+geometry1.SetFile(FilePath="C:/Users/ncgru/Documents/Projects/PC-Case/CAD-Mock4 (Simplified)/PC-Case4-fluidmodel.IGS")
+geometry1.Edit(IsDiscoveryGeometry=True)
+geometry1.Edit(IsSpaceClaimGeometry=True)
+geometry1.Exit()
+Save(Overwrite=True)

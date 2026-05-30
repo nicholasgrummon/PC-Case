@@ -1,0 +1,67 @@
+# encoding: utf-8
+# 2026 R1
+SetScriptVersion(Version="26.1.174")
+system1 = GetSystem(Name="FFF")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath="C:/Users/ncgru/Documents/Projects/PC-Case/CAD-Mock4 (Simplified)/PC-Case4-fluidmodel.STEP")
+meshComponent1 = system1.GetComponent(Name="Mesh")
+meshComponent1.Refresh()
+mesh1 = system1.GetContainer(ComponentName="Mesh")
+mesh1.Edit()
+mesh1.Exit()
+meshComponent1.Update(AllDependencies=True)
+setupComponent1 = system1.GetComponent(Name="Setup")
+setupComponent1.Refresh()
+setup1 = system1.GetContainer(ComponentName="Setup")
+fluentLauncherSettings1 = setup1.GetFluentLauncherSettings()
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(EnvPath={}))
+setup1.Edit()
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command="""/file/set-tui-version \"26.1\"
+Graphics driver currently in use: dx11
+(cx-gui-do cx-activate-item \"Information*OK\")(cx-use-window-id 51)(cx-set-camera-relative '(0.11035 -0.339388 0.262846) '(0 0 0) '(0.124681 0.144658 0.13444) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(-0.982496 -0.834164 0.652066) '(0 0 0) '(0.146103 0.119668 0.304051) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(-1.32103 0.731172 -0.821496) '(0 0 0) '(0.553588 -0.0888258 -0.278779) 0 0)(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Boundary Conditions|Wall\"))(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Boundary Conditions|Inlet|inlet (velocity-inlet, id=9)\"))""")
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|inlet (velocity-inlet, id=9)"))(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|inlet (velocity-inlet, id=9)"))(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 1)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 2)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 3)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 4)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 5)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 6)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 7)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 8)(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)(cx-gui-do cx-activate-item "Velocity Inlet*PanelButtons*PushButton2(Cancel)")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions"))(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Boundary Conditions\"))(cx-gui-do cx-set-list-selections \"Boundary Conditions*Table1*List2(Zone)\" '( 2))(cx-gui-do cx-activate-item \"Boundary Conditions*Table1*List2(Zone)\")")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Boundary Conditions*Table1*Table3*Table4*ButtonBox1*PushButton1(Edit)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Interior*PanelButtons*PushButton2(Cancel)")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Initialization"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Initialization"))(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Solution|Initialization\"))(cx-gui-do cx-set-list-selections \"Solution Initialization*Table1*DropDownList1(Compute from)\" '( 0))")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Solution Initialization*Table1*DropDownList1(Compute from)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Solution Initialization*Table1*Frame9*PushButton1(Initialize)")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Run Calculation*Table1*Table6(Solution Advancement)*Table1*PushButton4(Calculate)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Information*OK")')
+Save(Overwrite=True)
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*FileMenu*Save Project")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Information*OK")(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Wall|wall-fluid (wall, id=8)"))(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Wall|wall-fluid (wall, id=8)"))')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*FileMenu*Close Fluent")')
+results1 = system1.GetContainer(ComponentName="Results")
+results1.Edit()
+results1.SendCommand(Command="""VIEW:View 1
+  Camera Mode = User Specified
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pivot Point = 0.227013, 0.159544, -0.085725
+    Scale = 3.61639
+    Pan = 0, 0
+    Rotation Quaternion = 0.0015807, -0.958698, -0.20999, -0.191945
+    
+  END
+
+END
+
+> update
+# Sending visibility action from ViewUtilities
+>hide /DATA READER/CASE:Case FFF/BOUNDARY:wall fluid, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /DATA READER/CASE:Case FFF/BOUNDARY:wall fluid, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>hide /DATA READER/CASE:Case FFF/BOUNDARY:outlet.1, view=/VIEW:View 1""")
+results1.Exit()
+Save(Overwrite=True)
