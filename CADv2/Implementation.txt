@@ -1,0 +1,4 @@
+Front panel is not fixed, held on by keyhole clip
+Motherboard frame brackets can have countersunk bolts so that motherboard does not have to be inset --> better port alignment with case exteriod
+Slots in base plate for panels --> clip in only, no bolting
+cut-out around handle for more hand clearance
